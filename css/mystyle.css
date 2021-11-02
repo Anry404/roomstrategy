@@ -1,0 +1,181 @@
+/*.navbar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}*/
+.ava-img {
+  border-color: red !important;
+  border: 2px !important;
+  width: 50%;
+  height: 50%;
+}
+
+.martop {
+  margin-top: 2rem !important;
+}
+
+.marbot {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.marbot p {
+  text-indent: 2rem;
+}
+
+.date, .author {
+  font-weight: bold;
+}
+
+.author {
+  margin-top: 1rem;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.4);
+  color: red !important;
+}
+
+/*menu child*/
+.dropdown-child {
+  display: none;
+}
+
+.dropdown-child a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-child {
+  display: block;
+  margin-left: 2rem;
+  z-index: 100;
+}
+
+.slow_nav>ul>li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 0;
+}
+
+.slow_nav a {
+  text-decoration: none;
+}
+
+.slow_nav>ul>li>a {
+  font-size: 18px;
+  padding: 5px;
+  color: #fff;
+}
+
+.slow_nav li ul {
+  position: absolute;
+  list-style: none;
+  text-align: center;
+  top: 15px;
+  font-size: 15px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  /* Данные строки нужны для правильной работы анимации */
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s linear;
+  -moz-transition: max-height 0.4s linear;
+  transition: max-height 0.4s linear;
+  /* конец */
+}
+
+.slow_nav li:hover ul {
+  max-height: 300px;
+}
+
+.slow_nav li ul li {
+  background-color: #333;
+  border-bottom: 1px solid #888;
+}
+
+.slow_nav li ul li:last-child {
+  border-bottom: none;
+}
+
+.slow_nav li ul li a {
+  padding: 5px 12px;
+  color: #fff;
+  display: block;
+}
+
+.slow_nav li ul li:hover {
+  background-color: #444;
+}
+
+.slow_nav li ul li:first-child {
+  margin-top: 25px;
+  position: relative;
+}
+
+.slow_nav li ul li:first-child:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 5px solid transparent;
+  border-bottom-color: #333;
+  left: 10px;
+  top: -10px;
+}
+
+/*end menu*/
+.novis {
+  visibility: hidden;
+}
+
+.to-up {
+  position: fixed;
+  bottom: 135px;
+  right: 25px;
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.to-up:hover {
+  opacity: 1;
+}
+
+/*buttonUP*/
+.triangle-top {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 30px solid #0d6efd;
+}
+
+.triangle-top:after {
+  content: "UP";
+  color: #fff;
+  position: absolute;
+  bottom: -3px;
+  right: 14px;
+  opacity: 0.2;
+}
+
+.triangle-top:hover:after {
+  content: "UP";
+  color: #ff0;
+  position: absolute;
+  bottom: 3px;
+  /* Положение от нижнего края */
+  right: 14px;
+  /* Положение от правого края */
+  opacity: 1;
+}
+
+.triangle-top:hover {
+  border-bottom: 60px solid #0d6efd;
+}
